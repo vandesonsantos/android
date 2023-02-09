@@ -45,8 +45,8 @@ a.externo::after {
     content: ' \1F517';
 }
 
-/* Configurações do cabecalho */
-header {
+/* CABEÇALHO */
+.cabecalho{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
     text-align: center;
