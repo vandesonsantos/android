@@ -2,14 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face {
+@font-face{
     font-family: 'Android';
     src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
 
-/* Configurações de variavel em CSS */
-:root {
+/* Variáveis CSS */
+:root{
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
     --cor2: #3ddc84;
@@ -22,24 +22,23 @@
     --fonte-android: 'Android', 'cursive';
 }
 
-/* Seletor global para retirar margem */
-* {
+*{
     margin: 0px;
     padding: 0px;
 }
 
-/* Configurações do corpo do site. */
-body {
+body{
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
 }
 
-p {
+p{
     margin: 15px 0px;
     text-indent: 30px;
     font-size: 1em;
     line-height: 2em;
 }
+
 /* Colocar o emoji do emoji-pidia depois do link */
 a.externo::after {
     content: ' \1F517';
@@ -53,34 +52,35 @@ a.externo::after {
     padding-top: 40px;
 }
 
-header > h1 {
-    color: white;
-    font-family: var(--fonte-destaque);
-    font-size: 3em;
-    margin-bottom: 20px;
+.cabecalho h1, .cabecalho p{
+    color: #fff;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
 }
 
-header > p {
-    color: white;
+.cabecalho h1{
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.cabecalho p{
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     max-width: 600px;
     padding-right: 10px;
     padding-left: 10px;
     margin: auto;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
 }
 
-/* Configurações do menu */
-nav {
+/* MENU*/
+.navegacao{
     background-color: var(--cor5);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.281);
 }
 
-nav > a {
-    color: white;
+.navegacao a{
+    color: #fff;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -88,14 +88,14 @@ nav > a {
     transition-duration: .3s;
 }
 
-nav > a:hover {
+.navegacao a:hover{
     background-color: var(--cor3);
     color: var(--cor5);
 }
 
-/* Configurações do conteúdo */
-main {
-    background-color: white;
+/* CONTEÚDO*/
+.conteudo-principal{
+    background-color: #fff;
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
@@ -106,12 +106,12 @@ main {
     border-bottom-right-radius: 10px;
 }
 
-main h1 {
+.conteudo-principal h1{
     color: var(--cor5);
     font-family:var(--fonte-android);
 }
 
-main h2 {
+.conteudo-principal h2{
     font-family: var(--fonte-android);
     color: var(--cor4);
     font-size: 1.3em;
@@ -119,26 +119,26 @@ main h2 {
     text-indent: 8px;
 }
 
-main p {
+.conteudo-principal p{
     text-align: justify;
 }
 
-main img {
+.conteudo-principal img{
     width: 100%;
 }
 
-main img.pequeno {
+.conteudo-principal .imagem-pequena{
     max-width: 350px;
     display: block;
     margin: auto;
 }
 
-main strong {
+.conteudo-principal strong{
     color: var(--cor4);
     font-weight: bold;
 }
 
-main a {
+.conteudo-principal a{
     text-decoration: none;
     font-weight: bold;
     color: var(--cor5);
@@ -146,12 +146,13 @@ main a {
     padding: 2px 6px;
 }
 
-main a:hover {
+.conteudo-principal a:hover{
     text-decoration: underline;
     color: var(--cor4);
 }
 
-main article div.video {
+/* VIDEO DO YOUTUB */
+.conteudo-principal .video{
     background-color: var(--cor5);
     margin: 0px -20px 30px -20px;
     padding: 20px;
@@ -159,7 +160,7 @@ main article div.video {
     padding-bottom: 58%;
 }
 
-main article div.video > iframe {
+.conteudo-principal .video > iframe{
     position: absolute;
     top: 5%;
     left: 5%;
@@ -167,43 +168,43 @@ main article div.video > iframe {
     height: 90%;
 }
 
-/* Configuração do conteúdo périferico */
-aside {
+/* CONTEÚDO PÉRIFERICO */
+.conteudo-periferico{
     background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.322);
 }
 
-aside > h3 {
+.conteudo-periferico h3{
     background-color: var(--cor4);
-    color: white;
+    color: #fff;
     padding: 10px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
 }
 
-aside > ul {
+.conteudo-periferico ul{
     list-style: inside;
     columns: 2;
 }
 
-/* Configurações dos rodapé */
-footer {
+/* RODAPÉ */
+.rodape{
     background-color: var(--cor5);
-    color: white;
+    color: #fff;
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
 }
 
-footer a {
-    color: white;
+.rodape a{
+    color: #ffffffc5;
     font-weight: bold;
     text-decoration: none;
 }
 
-footer a:hover {
+.rodape a:hover{
     text-decoration: underline;
     color: var(--cor1);
 }
