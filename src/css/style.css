@@ -126,6 +126,11 @@ a.externo::after {
     width: 100%;
 }
 
+.conteudo-principal .borda{
+    border: 2px solid #063d1e98;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.904);
+}
+
 .conteudo-principal .imagem-pequena{
     max-width: 350px;
     display: block;
@@ -206,4 +211,28 @@ a.externo::after {
 .rodape a:hover{
     text-decoration: underline;
     color: var(--cor1);
+}
+
+/* RESPOSIVIDADE */
+@media(max-width: 600px){
+    .cabecalho p{
+        font-size: 1em;
+        padding-bottom: 10px;
+    }
+
+    .navegacao a{
+        font-size: 0.9em;
+        padding: 5px;
+    }
+}
+
+@media(max-width: 400px){
+    .navegacao a{
+        font-size: 0.8em;
+    }
+
+    .conteudo-periferico ul{
+        list-style: inside;
+        columns: 1;
+    }
 }
